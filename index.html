@@ -13,8 +13,7 @@
     <title>T&C - Beyond Quantum</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <navbar>
+      <navbar class="navbar">
         <div class="logo-container">
           <img
             class="logo"
@@ -26,69 +25,67 @@
           <h1 class="logo">Terms and Conditions</h1>
         </div>
         <div class="btn-group navButtons">
-          <button class="btn btn-primary tab active-color tab-link">
-            Terms & Conditions
-          </button>
-          <button class="btn btn-primary tab active-color tab-link">
-            Privacy Policies
-          </button>
-        </div>
+            <button id="termsButton" class="btn tab tablink btn-primary active" onclick="openTab(event, 'terms')">Terms and Conditions</button>
+            <button class="btn tab tablink btn-primary" onclick="openTab(event, 'privacy')">Privacy</button>
+          </div>
       </navbar>
       <main class="container">
-        <div class="disclaimer-container">
-          <section class="disclaimer-section">
-            <h4 class="disclaimer-heading">
-              <!-- <img id="exclaim" src="./images/exclamation-circle.svg" /> -->
-              DISCLAIMER: Beyond Quantum Educational Project
-              <!-- <img id="exclaim" src="./images/exclamation-circle.svg" /> -->
-            </h4>
-            <p class="disclaimer-content">
-              This web application, Beyond Quantum, is a dummy project created
-              for the sole purpose of learning Spring Boot and React. The Terms
-              and Conditions (T&C) outlined herein are entirely fictional and
-              designed to simulate the creation of legal documentation for
-              educational practice.
-            </p>
-          </section>
+        <div id="terms" class="tabContent">
+            <div class="disclaimer-container">
+              <section class="disclaimer-section">
+                <h4 class="disclaimer-heading">
+                  <!-- <img id="exclaim" src="./images/exclamation-circle.svg" /> -->
+                  DISCLAIMER: Beyond Quantum Educational Project
+                  <!-- <img id="exclaim" src="./images/exclamation-circle.svg" /> -->
+                </h4>
+                <p class="disclaimer-content">
+                  This web application, Beyond Quantum, is a dummy project created
+                  for the sole purpose of learning Spring Boot and React. The Terms
+                  and Conditions (T&C) outlined herein are entirely fictional and
+                  designed to simulate the creation of legal documentation for
+                  educational practice.
+                </p>
+              </section>
+            </div>
+            <div class="termsAndConditions">
+              <section id="notForUse-section">
+                <h4>Not for Actual Use:</h4>
+                <p id="notForUse-content" class="content">
+                  The T&C and Policies presented are not intended for actual use and
+                  do not reflect the terms and policies of any real-world
+                  application. They are purely educational and do not provide any
+                  legal protection or obligations.
+                </p>
+              </section>
+              <section id="learning-section">
+                <h4>Learning Purposes Only:</h4>
+                <p id="learning-content" class="content">
+                  Beyond Quantum is a learning project, and users are encouraged to
+                  treat all aspects, including account creation, content posting,
+                  and communication features, as part of a simulated educational
+                  environment. No real services or functionalities are offered, and
+                  any resemblance to actual apps is purely coincidental.
+                </p>
+              </section>
+              <section id="legal-section">
+                <h4>No Legal Standing:</h4>
+                <p id="legal-content" class="content">
+                  The terms, policies, and disclaimers mentioned do not have any
+                  legal standing and are not enforceable. They are created for
+                  instructional purposes only and should not be considered as
+                  legally binding agreements.
+                </p>
+              </section>
+              <section id="queries-section">
+                <h4>Contact for Educational Queries:</h4>
+                <p id="queries-content" class="content">
+                  For any questions related to the educational content, features, or
+                  this dummy project, please contact us at [Your Learning Email].
+                </p>
+              </section>
+            </div>
         </div>
-        <div class="termsAndConditions">
-          <section id="notForUse-section">
-            <h4>Not for Actual Use:</h4>
-            <p id="notForUse-content" class="content">
-              The T&C and Policies presented are not intended for actual use and
-              do not reflect the terms and policies of any real-world
-              application. They are purely educational and do not provide any
-              legal protection or obligations.
-            </p>
-          </section>
-          <section id="learning-section">
-            <h4>Learning Purposes Only:</h4>
-            <p id="learning-content" class="content">
-              Beyond Quantum is a learning project, and users are encouraged to
-              treat all aspects, including account creation, content posting,
-              and communication features, as part of a simulated educational
-              environment. No real services or functionalities are offered, and
-              any resemblance to actual apps is purely coincidental.
-            </p>
-          </section>
-          <section id="legal-section">
-            <h4>No Legal Standing:</h4>
-            <p id="legal-content" class="content">
-              The terms, policies, and disclaimers mentioned do not have any
-              legal standing and are not enforceable. They are created for
-              instructional purposes only and should not be considered as
-              legally binding agreements.
-            </p>
-          </section>
-          <section id="queries-section">
-            <h4>Contact for Educational Queries:</h4>
-            <p id="queries-content" class="content">
-              For any questions related to the educational content, features, or
-              this dummy project, please contact us at [Your Learning Email].
-            </p>
-          </section>
-        </div>
-        <div class="privacyPolicy">
+        <div id="privacy" class="privacyPolicy tabContent">
           <section class="privacy-container">
             <div class="disclaimer-container">
               <section class="disclaimer-section">
@@ -106,8 +103,8 @@
                 </p>
               </section>
             </div>
-            <div class="row">
-                <div class="col-4">
+            <div class="row privacy-tab">
+                <div class="col-3">
                   <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-intro" role="tab">Introduction</a>
                     <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-acceptance" role="tab">Acceptance of Policies</a>
@@ -120,7 +117,7 @@
                     <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-dispute" role="tab">Dispute Resolution</a>
                   </div>
                 </div>
-                <div class="col-8">
+                <div class="col-9 privacy-content">
                   <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="list-intro" role="tabpanel">
                         <strong>Welcome to Beyond Quantum! We are thrilled to have you as a part of our vibrant community. These policies are designed to provide a safe and enjoyable environment for all users of our social media app.</strong>
@@ -150,7 +147,6 @@
           </section>
         </div>
       </main>
-    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
