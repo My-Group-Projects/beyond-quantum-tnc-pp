@@ -19,6 +19,7 @@
     top:0;
     background-color:gray;
     background: #0a0a0a;
+    z-index: 3;
 }
 
 .navButtons{
@@ -100,11 +101,24 @@
     height:24px;
 }
 
-.privacy-tab{
+.tabs{
     margin-bottom: 5rem;
+    margin-top:2rem;
 }
 
 .tabs-content{
+    padding: 2rem 0 0 2rem;
     border: 1px solid purple;
+    color:purple;
     border-radius: 5px;
+    font-size:19px;
+}
+
+#list-contact > p > a{
+    text-decoration: none;
+}
+
+#list-contact > p > a:hover{
+    text-decoration: underline;
+    color:#19446a;
 }

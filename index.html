@@ -31,59 +31,103 @@
       </navbar>
       <main class="container">
         <div id="terms" class="tabContent">
-            <div class="disclaimer-container">
-              <section class="disclaimer-section">
-                <h4 class="disclaimer-heading">
-                  <!-- <img id="exclaim" src="./images/exclamation-circle.svg" /> -->
-                  DISCLAIMER: Beyond Quantum Educational Project
-                  <!-- <img id="exclaim" src="./images/exclamation-circle.svg" /> -->
-                </h4>
-                <p class="disclaimer-content">
-                  This web application, Beyond Quantum, is a dummy project created
-                  for the sole purpose of learning Spring Boot and React. The Terms
-                  and Conditions (T&C) outlined herein are entirely fictional and
-                  designed to simulate the creation of legal documentation for
-                  educational practice.
-                </p>
-              </section>
+          <div class="disclaimer-container">
+            <section class="disclaimer-section">
+              <h4 class="disclaimer-heading">
+                <!-- <img id="exclaim" src="./images/exclamation-circle.svg" /> -->
+                DISCLAIMER: Beyond Quantum Educational Project
+                <!-- <img id="exclaim" src="./images/exclamation-circle.svg" /> -->
+              </h4>
+              <p class="disclaimer-content">
+                This web application, Beyond Quantum, is a dummy project created
+                for the sole purpose of learning Spring Boot and React. The Terms
+                and Conditions (T&C) outlined herein are entirely fictional and
+                designed to simulate the creation of legal documentation for
+                educational practice.
+              </p>
+            </section>
+          </div>
+          <div class="row tabs termsAndConditions">
+            <div class="col-3">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-notForUse-list" data-bs-toggle="list" href="#list-notForUse" role="tab">Not for Actual Use</a>
+                <a class="list-group-item list-group-item-action" id="list-learning-list" data-bs-toggle="list" href="#list-learning" role="tab">Learning Purposes Only</a>
+                <a class="list-group-item list-group-item-action" id="list-legal-list" data-bs-toggle="list" href="#list-legal" role="tab">No Legal Standing</a>
+                <a class="list-group-item list-group-item-action" id="list-agreement-list" data-bs-toggle="list" href="#list-agreement" role="tab">Agreement to Terms</a>
+                <a class="list-group-item list-group-item-action" id="list-userAccounts-list" data-bs-toggle="list" href="#list-userAccounts" role="tab">User Accounts</a>
+                <a class="list-group-item list-group-item-action" id="list-posting-list" data-bs-toggle="list" href="#list-posting" role="tab">Content Posting</a>
+                <a class="list-group-item list-group-item-action" id="list-moments-list" data-bs-toggle="list" href="#list-moments" role="tab">My Moments</a>
+                <a class="list-group-item list-group-item-action" id="list-flash-list" data-bs-toggle="list" href="#list-flash" role="tab">Flash Messaging</a>
+                <a class="list-group-item list-group-item-action" id="list-privacy-list" data-bs-toggle="list" href="#list-privacy" role="tab">Privacy</a>
+                <a class="list-group-item list-group-item-action" id="list-termination-list" data-bs-toggle="list" href="#list-termination" role="tab">Termination of Services</a>
+                <a class="list-group-item list-group-item-action" id="list-termsAmendments-list" data-bs-toggle="list" href="#list-termsAmendments" role="tab">Amendments</a>
+                <a class="list-group-item list-group-item-action" id="list-contact-list" data-bs-toggle="list" href="#list-contact" role="tab">Contact Information</a>
+              </div>
             </div>
-            <div class="termsAndConditions">
-              <section id="notForUse-section">
-                <h4>Not for Actual Use:</h4>
-                <p id="notForUse-content" class="content">
-                  The T&C and Policies presented are not intended for actual use and
-                  do not reflect the terms and policies of any real-world
-                  application. They are purely educational and do not provide any
-                  legal protection or obligations.
-                </p>
-              </section>
-              <section id="learning-section">
-                <h4>Learning Purposes Only:</h4>
-                <p id="learning-content" class="content">
-                  Beyond Quantum is a learning project, and users are encouraged to
-                  treat all aspects, including account creation, content posting,
-                  and communication features, as part of a simulated educational
-                  environment. No real services or functionalities are offered, and
-                  any resemblance to actual apps is purely coincidental.
-                </p>
-              </section>
-              <section id="legal-section">
-                <h4>No Legal Standing:</h4>
-                <p id="legal-content" class="content">
-                  The terms, policies, and disclaimers mentioned do not have any
-                  legal standing and are not enforceable. They are created for
-                  instructional purposes only and should not be considered as
-                  legally binding agreements.
-                </p>
-              </section>
-              <section id="queries-section">
-                <h4>Contact for Educational Queries:</h4>
-                <p id="queries-content" class="content">
-                  For any questions related to the educational content, features, or
-                  this dummy project, please contact us at [Your Learning Email].
-                </p>
-              </section>
+            <div class="col-9 tabs-content">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-notForUse" role="tabpanel">
+                  <p>The T&C and Policies presented are not intended for actual use and do not reflect the terms and policies of any real-world application. They are purely educational and do not provide any legal protection or obligations.</p>
+                </div>
+                <div class="tab-pane fade" id="list-learning" role="tabpanel">
+                  <p>Beyond Quantum is a learning project, and users are encouraged to treat all aspects, including account creation, content posting, and communication features, as part of a simulated educational environment. No real services or functionalities are offered, and any resemblance to actual apps is purely coincidental.</p>
+                </div>
+                <div class="tab-pane fade" id="list-legal" role="tabpanel">
+                  <p>The terms, policies, and disclaimers mentioned do not have any legal standing and are not enforceable. They are created for instructional purposes only and should not be considered as legally binding agreements.</p>
+                </div>
+                <div class="tab-pane fade" id="list-agreement" role="tabpanel">
+                  <p>
+                    By using Beyond Quantum ("the Web-App"), you agree to comply with and be bound by these Terms and Conditions.
+                  </p>
+                </div>
+                <div class="tab-pane fade" id="list-userAccounts" role="tabpanel">
+                  <ul>
+                      <li>Users must create an account to access certain features of the web-app.</li>
+                      <li>Users are responsible for maintaining the confidentiality of their account information.</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="list-posting" role="tabpanel">
+                  <ul>
+                    <li>Users can post images and videos on the stream feature, ensuring content complies with community guidelines.</li>
+                    <li>Beyond Quantum reserves the right to remove or moderate content that violates these guidelines.</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="list-moments" role="tabpanel">
+                  <ul>
+                    <li>My Moments allows users to create temporary stories for a day.</li>
+                    <li>Users should be mindful of the content they share, and the web-app reserves the right to remove inappropriate content.</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="list-flash" role="tabpanel">
+                  <ul>
+                    <li>Flash is a messaging feature for real-time chat.</li>
+                    <li>Users are expected to adhere to community standards and refrain from abusive behavior.</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="list-privacy" role="tabpanel">
+                  <ul>
+                    <li>Beyond Quantum collects and processes user data as outlined in the Privacy Policy.</li>
+                    <li>Users are encouraged to review and understand the Privacy Policy regarding data usage.</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="list-termination" role="tabpanel">
+                  <ul>
+                    <li>Beyond Quantum may terminate or suspend services for users violating these terms.</li>
+                    <li>Users have the right to appeal any terminations or suspensions.</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="list-termsAmendments" role="tabpanel">
+                  <ul>
+                    <li>Beyond Quantum reserves the right to update these terms periodically.</li>
+                    <li>Users will be notified of any changes, and continued use implies acceptance of the updated terms.</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="list-contact" role="tabpanel">
+                  <p>For questions or concerns, users can contact Beyond Quantum at <a href="mailto:beyondquantum@dummy.com">beyondquantum@dummy.com</a></p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
         <div id="privacy" class="privacyPolicy tabContent">
           <section class="privacy-container">
@@ -103,24 +147,25 @@
                 </p>
               </section>
             </div>
-            <div class="row privacy-tab">
+              <div class="row tabs">
                 <div class="col-3">
                   <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-intro" role="tab">Introduction</a>
                     <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-acceptance" role="tab">Acceptance of Policies</a>
                     <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-responsibilities" role="tab">User Responsibilities</a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-intellectual" role="tab">Intellectual Property</a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-security" role="tab">Security</a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-violations" role="tab">Reporting Violations</a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-amendments" role="tab">Amendments</a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-liability" role="tab">Limitations of Liability</a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-dispute" role="tab">Dispute Resolution</a>
+                    <a class="list-group-item list-group-item-action" id="list-intellectual-list" data-bs-toggle="list" href="#list-intellectual" role="tab">Intellectual Property</a>
+                    <a class="list-group-item list-group-item-action" id="list-security-list" data-bs-toggle="list" href="#list-security" role="tab">Security</a>
+                    <a class="list-group-item list-group-item-action" id="list-violations-list" data-bs-toggle="list" href="#list-violations" role="tab">Reporting Violations</a>
+                    <a class="list-group-item list-group-item-action" id="list-amendments-list" data-bs-toggle="list" href="#list-amendments" role="tab">Amendments</a>
+                    <a class="list-group-item list-group-item-action" id="list-liability-list" data-bs-toggle="list" href="#list-liability" role="tab">Limitations of Liability</a>
+                    <a class="list-group-item list-group-item-action" id="list-dispute-list" data-bs-toggle="list" href="#list-dispute" role="tab">Dispute Resolution</a>
                   </div>
                 </div>
                 <div class="col-9 tabs-content">
                   <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="list-intro" role="tabpanel">
                         <strong>Welcome to Beyond Quantum! We are thrilled to have you as a part of our vibrant community. These policies are designed to provide a safe and enjoyable environment for all users of our social media app.</strong>
+                        <br><br>
                         <p>At Beyond Quantum, our primary goal is to foster a dynamic and inclusive space where individuals from diverse backgrounds can connect, share ideas, and explore the limitless possibilities of our social media app. We understand that every user plays a vital role in shaping the community, and we value the unique contributions each person brings.</p>
                     </div>
                     <div class="tab-pane fade" id="list-acceptance" role="tabpanel">Users must acknowledge and agree to abide by our policies when using Beyond Quantum.</div>
