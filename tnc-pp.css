@@ -112,6 +112,7 @@
     color:purple;
     border-radius: 5px;
     font-size:19px;
+    overflow-y: auto;
 }
 
 #list-contact > p > a{
