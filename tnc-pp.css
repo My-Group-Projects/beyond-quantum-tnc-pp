@@ -1,0 +1,110 @@
+.tabContent {
+    display: none;
+  }
+
+.tabContent.active {
+  display: block;
+}
+
+.tablink.active{
+    background-color:#80199c;
+    border-color: #80199c;
+    color: whitesmoke;
+}
+
+
+
+.navbar{
+    position: sticky;
+    top:0;
+    background-color:gray;
+    background: #0a0a0a;
+}
+
+.navButtons{
+    margin-right: 2rem;
+    background-color:#80199c;
+}
+
+.navButtons button{
+    border: 3px solid;
+    border-color: #80199c;
+    background-color: whitesmoke;
+    color: #80199c;
+}
+
+.navButtons button:hover{
+    background-color:#19446a;
+    border-color:#0d6efd;
+}
+
+
+.list-group-item.active{
+    background-color:#80199c;
+    border-color:#80199c;
+}
+
+.container{
+    width:75%;
+}
+
+.logo-container{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    padding: 0.5rem 1rem;
+    color: #fbfbfb;
+    background-color: #0A0A0A;
+}
+#pipe{
+    font-weight:100;
+}
+
+.logo{
+    display:inline-block;
+    user-select:none;
+    -webkit-user-drag: none;
+}
+
+#bq-logo{
+    height:130px;
+    width:130px;
+}
+
+.disclaimer-container{
+    display:flex;
+    justify-content:center;
+
+}
+
+.disclaimer-section{
+    background-color:rgb(255, 224, 229);
+    border: 3px solid rgb(255, 143, 162);
+    border-radius:10px;
+    padding: 1.4rem 1rem;
+    margin-top:5rem;
+    width:100%;
+    margin-bottom: 5rem;
+}
+.disclaimer-section h4{
+    text-align:center;
+    color:red;
+    margin-bottom: 1.5rem;
+}
+.disclaimer-section p{
+    color:#19446a;
+}
+
+#exclaim{
+    color:red;
+    height:24px;
+}
+
+.privacy-tab{
+    margin-bottom: 5rem;
+}
+
+.tabs-content{
+    border: 1px solid purple;
+    border-radius: 5px;
+}
