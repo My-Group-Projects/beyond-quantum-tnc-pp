@@ -1,6 +1,10 @@
 function openTab(event, tabName) {
     let i, tabContent, tabLinks;
 
+  tabName === "terms"
+    ? (document.getElementById("tabHeading").innerHTML = "Terms and Conditions")
+    : (document.getElementById("tabHeading").innerHTML = "Privacy Policy");
+
     // Remove the "active" class from all elements with the class "tablink"
     tabLinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tabLinks.length; i++) {
