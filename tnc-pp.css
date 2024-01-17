@@ -107,7 +107,8 @@
 }
 
 .tabs-content{
-    padding: 2rem 0 0 2rem;
+    text-align:justify;
+    padding: 2rem 2rem 0 2rem;
     border: 1px solid purple;
     color:purple;
     border-radius: 5px;
